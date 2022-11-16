@@ -18,8 +18,8 @@ if __name__ == "__main__" :
             file_byte = file_byte + conn.recv(1024)
             file_len -= 1024
             print(file_len)
-    file = open(file_name,'w',newline='')
-    file.write(file_byte.decode('utf-8'))
+        file = open(file_name,'w',newline='')
+        file.write(file_byte.decode('utf-8'))
     
 
     
