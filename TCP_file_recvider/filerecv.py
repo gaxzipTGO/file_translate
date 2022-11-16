@@ -3,7 +3,7 @@ import sys
 
 if __name__ == "__main__" :
     server = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    if len(sys.argv) > 2 :
+    if len(sys.argv) == 2 :
         file_name = sys.argv[1]
         IPAddress = input('please input your IP address')
         server.bind((IPAddress,9500))
